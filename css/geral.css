@@ -62,7 +62,7 @@ body{
   grid-column: 1 / 4;
 }
 
-.animais h2{
+.conteudo h2{
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -70,7 +70,7 @@ body{
   color: #E54;
 }
 
-.animais h2::before{
+.conteudo h2::before{
   content: '';
   display: inline-block;
   width: 40px;
@@ -84,7 +84,7 @@ span{
   margin-top: 20px;
 }
 
-.animais-descricao{
+.conteudo-descricao{
   grid-column: 2 / 4;
 }
 
@@ -106,7 +106,7 @@ span{
     font-size: 3rem;
   }
 
-  .animais-descricao{
+  .conteudo-descricao{
     grid-column: 1 / 3;
   }
 }
