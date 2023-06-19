@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+  <title>Validador CPF</title>
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#ajuda">Ajuda</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li></li>
+      </ul>
+    </nav><!--menu-->
+
+    <section class="grid-section animais">
+      <h1 class="titulo">Validador de CPF</h1>
+      <div class="animais-descricao">
+        <section>
+          <h2>Clique no botão para validar o seu CPF</h2>
+          <button type="submit" data-modal="abrir">Clique aqui</button>
+        </section>
+      </div>
+    </section>
+
+  </div><!--grid-container-->
+
+  <section class="modal-container" data-modal="container">
+
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="cpf">Validador CPF</label>
+        <input type="text" id="cpf" placeholder="Insira o seu CPF" maxlength="14">
+      </form>
+      <button id="btValidar" onclick="validaCpf()" type="submit">Entrar</button>
+      <span id="resultado"></span>
+    </div><!--modal-->
+
+  </section><!--modal-container-->
+
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
